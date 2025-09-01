@@ -1,0 +1,35 @@
+/* Styles for Grading component */
+.grading-dashboard {
+  padding: 20px;
+}
+
+.grading-dashboard h1 {
+  margin-bottom: 18px;
+}
+
+.grading-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.metric label { display: block; margin-bottom: 8px; font-weight: 600; }
+
+.progress-bar { background: var(--muted); height: 18px; border-radius: 18px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary); border-radius: 18px; }
+
+.star-rating .star { font-size: 28px; margin-right: 6px; color: #e5e7eb; cursor: pointer; }
+.star-rating .star.filled { color: #fbbf24; }
+
+.metric textarea { width: 100%; min-height: 120px; border-radius: 16px; padding: 14px; border: none; background: var(--card-bg); }
+.metric select { padding: 8px 10px; border-radius: 8px; }
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

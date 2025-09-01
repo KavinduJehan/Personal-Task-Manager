@@ -1,0 +1,14 @@
+/* Styles for PomodoroTimer component */
+.pomodoro-timer {
+  display: flex;
+  gap: 28px;
+}
+
+.timer-container { background: var(--card-bg); padding: 28px; border-radius: 14px; box-shadow: var(--shadow); flex: 1; }
+.today-tasks { background: #eef2ff; padding: 20px; border-radius: 14px; width: 360px; }
+
+.timer-circle { display:flex; align-items:center; justify-content:center; height:360px; border-radius:50%; background: #fff; border: 2px solid #e5e7eb; }
+.timer-display { font-size: 72px; color: var(--primary); font-weight:700; }
+
+.start-btn { background: transparent; border: 2px solid var(--primary); padding: 14px 40px; border-radius: 40px; color: var(--primary); font-weight:700; cursor:pointer; }
+.reset-btn { background: var(--muted); border:none; padding:10px 20px; border-radius: 12px; margin-left:12px; }

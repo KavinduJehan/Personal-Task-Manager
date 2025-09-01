@@ -1,0 +1,48 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.welcome-section h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.task-table {
+  .dashboard {
+    padding: 20px 0;
+  }
+
+  .welcome-section {
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
+  }
+
+  .task-table { background: var(--card-bg); padding: 18px; border-radius: 12px; box-shadow: var(--shadow); }
+  .table-header { display:grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; font-weight:700; padding-bottom:12px; }
+  .task-row { display:grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap:12px; padding:10px 0; align-items:center; border-top:1px solid #e9ecef; }
+  .priority-low::before { content: '● '; color:#10b981; }
+  .priority-medium::before { content: '● '; color:#f59e0b; }
+  .priority-high::before { content: '● '; color:#ef4444; }
+
+  .calendar-placeholder { background: white; padding: 22px; border-radius:12px; box-shadow: var(--shadow); }
+}
